@@ -17,15 +17,55 @@
 <body class="bg-black text-light">
 
   <!-- Top Announcement Bar -->
-  <div class="announcement-bar py-2 text-center text-uppercase fw-bold small">
-    LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER | ISLAND-WIDE CASH ON DELIVERY AVAILABLE.
+  <!-- <marquee loop="10" class="announcement-bar py-2 text-center text-uppercase fw-bold small">
+    LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER&nbsp;&nbsp;&nbsp;
+    <span>•</span>&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <span>•</span>&nbsp;&nbsp;&nbsp;
+    LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER&nbsp;&nbsp;&nbsp;
+    <span>•</span>&nbsp;&nbsp;&nbsp;
+    ISLAND-WIDE CASH ON DELIVERY AVAILABLE&nbsp;&nbsp;&nbsp;
+    <span>•</span>&nbsp;&nbsp;&nbsp;
+  </marquee> -->
+
+  <div class="announcement-bar py-2 overflow-hidden bg-white text-black">
+  <div class="marquee-wrapper">
+    <div class="marquee-group">
+      <span>LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER</span>
+      <span>• </span>
+      <span>ISLAND-WIDE CASH ON DELIVERY AVAILABLE</span>
+      <span>• </span>
+            <span>LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER</span>
+      <span>• </span>
+      <span>ISLAND-WIDE CASH ON DELIVERY AVAILABLE</span>
+      <span>• </span>
+      <!-- <span>• ISLANDWIDE FAST DISPATCH</span>
+      <span>• LIMITED QUANTITIES</span>
+      <span>• ORDER VIA WHATSAPP</span> -->
+    </div>
+    <!-- Duplicate group for seamless, gap-free infinite loop -->
+    <div class="marquee-group" aria-hidden="true">
+         <span>LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER</span>
+         <span>• </span>
+      <span>ISLAND-WIDE CASH ON DELIVERY AVAILABLE</span>
+      <span>• </span>
+            <span>LAUNCH EXCLUSIVE: GET 10% OFF YOUR FIRST ORDER</span>
+      <span>• </span>
+      <span>ISLAND-WIDE CASH ON DELIVERY AVAILABLE</span>
+      <span>• </span>
+
+    </div>
   </div>
+</div>
+
+
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-dark-subtle py-3">
     <div class="container">
       <a class="navbar-brand fw-black tracking-widest fs-3 text-uppercase d-flex align-items-center gap-2" href="#">
-        <img src="Images/ChatGPT Image May 21, 2026, 11_00_56 PM.png" alt="REVENGE Logo" width="38" height="38" class="object-fit-contain">
+        <img src="Images/ChatGPT Image May 21, 2026, 11_00_56 PM.png" alt="REVENGE Logo" width="38" height="38"
+          class="object-fit-contain">
         <span>REVENGE</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -55,8 +95,8 @@
       </p>
       <div class="d-flex justify-content-center gap-3">
         <!-- <a href="#shop" class="btn btn-light rounded-0 px-4 py-3 fw-bold text-uppercase tracking-wide">SHOP THE DROP</a> -->
-        <a href="#shop"
-          class="btn btn-outline-light rounded-0 px-4 py-3 fw-bold text-uppercase tracking-wide">SHOP THE DROP</a>
+        <a href="#shop" class="btn btn-outline-light rounded-0 px-4 py-3 fw-bold text-uppercase tracking-wide">SHOP THE
+          DROP</a>
       </div>
     </div>
   </header>
