@@ -3,7 +3,7 @@
 // Format: Country code without '+' or '00'
 // Example for Sri Lanka (0771234567): "94771234567"
 // ==========================================
-const WHATSAPP_NUMBER = "947XXXXXXXX"; 
+const WHATSAPP_NUMBER = "94762588260"; 
 
 document.addEventListener('DOMContentLoaded', () => {
   const buyButtons = document.querySelectorAll('.buy-btn');
