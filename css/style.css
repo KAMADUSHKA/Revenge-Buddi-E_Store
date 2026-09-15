@@ -1,0 +1,152 @@
+/* Base Styling */
+:root {
+  --bg-dark-custom: #111111;
+  --accent-color: #ffffff;
+  --border-color: #2b2b2b;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #050505;
+  color: #f1f1f1;
+  overflow-x: hidden;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.tracking-wide {
+  letter-spacing: 1.5px;
+}
+
+.tracking-wider {
+  letter-spacing: 3px;
+}
+
+.tracking-widest {
+  letter-spacing: 6px;
+}
+
+.bg-dark-custom {
+  background-color: var(--bg-dark-custom);
+}
+
+.announcement-bar {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(5, 5, 5, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  color: #aaa !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff !important;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(5, 5, 5, 0.9)), 
+              url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.hero-badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.hero-desc {
+  max-width: 650px;
+}
+
+/* Product Cards */
+.product-card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: #555 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.product-img-wrapper {
+  background-color: #1a1a1a;
+  height: 380px;
+}
+
+.product-img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+/* Custom Checkboxes / Radios */
+.btn-check:checked + .btn-outline-light {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #181818 !important;
+  color: #fff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Color indicator dots */
+.color-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.bg-black-dot {
+  background-color: #000;
+}
+
+.bg-white-dot {
+  background-color: #fff;
+}
+
+.bg-grey-dot {
+  background-color: #6c757d;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
